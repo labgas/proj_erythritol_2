@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-10T17:08:39.302606+00:00",
+  "_captured_run_id": "r_8c58fb5b0cf94dda83a60d88ff095cd1",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "Read 90 rows from DATALINES.",
+    "PROC TRANSREG completed.",
+    "PROC MIXED data=PR_hormone"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

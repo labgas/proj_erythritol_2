@@ -1,0 +1,307 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: PR_hormone
+Observations:  90
+Variables:     5
+
+Variables (in alphabetical order):
+
+  #  Variable   Type    Len  Format  Label
+---  ---------  ----  -----  ------  -----
+  1  condition  Char    200          
+  2  delta_CCK   Num      8          
+  3  dosage      Num      8          
+  4  subject     Num      8          
+  5  time        Num      8          
+
+-------------------------------------------------------------------------------
+
+                                                The UNIVARIATE Procedure
+                                                  Variable:  delta_CCK
+
+                                                        Moments
+
+N                                 90    Sum Weights                       90
+Mean                        0.221111    Sum Observations           19.900000
+Std Deviation               0.457766    Variance                    0.209549
+Skewness                    2.215377    Kurtosis                    7.177658
+Uncorrected SS             23.050000    Corrected SS               18.649889
+Coeff Variation           207.029653    Std Error Mean              0.048253
+
+        Basic Statistical Measures         
+
+Location            Variability            
+--------  --------  -------------  --------
+Mean      0.221111  Std Deviation  0.457766
+Median    0.150000  Variance       0.209549
+Mode      0.000000  Range          2.800000
+
+Quantiles (Definition 5)
+
+Quantile     Estimate
+----------  ---------
+0% Min      -0.600000
+1%          -0.600000
+5%          -0.300000
+10%         -0.200000
+25% Q1       0.000000
+50% Median   0.150000
+75% Q3       0.400000
+90%          0.600000
+95%          0.800000
+99%          2.200000
+100% Max     2.200000
+
+         Extreme Observations          
+
+Lowest               Highest           
+--------  ---------  --------  --------
+Value     -0.600000  Value     0.800000
+Value     -0.400000  Value     1.500000
+Value     -0.300000  Value     1.900000
+Value     -0.300000  Value     2.000000
+Value     -0.300000  Value     2.200000
+
+
+
+
+         Tests for Location          
+
+Test                Statistic   p Value
+------------------  ---------  --------
+Student's t         4.582354675  0.000014912
+Sign                       17  0.000153537
+Signed Rank              1827  0.000002253
+
+
+
+
+      Parameters for Lognormal Distribution
+
+Parameter    Estimate
+---------  ----------
+Zeta            -2.3416
+Sigma            1.2904
+
+
+The TRANSREG Procedure
+
+Dependent Transformation:      BOXCOX(delta_CCK)
+Independent Transformation:    IDENTITY(z)
+Number of Observations:        90
+
+Iteration History: 1
+Algorithm: MORALS Method
+Iteration     Criterion     Change
+     1        0.000000    Converged
+
+                     Analysis of Variance
+
+Source              DF    Type II SS    Mean Square    F Value    Pr > F
+Model                1    0.0000        0.0000             0.00    1.0000
+Error               88    18.6499       0.2119      
+Corrected Total     89    18.6499     
+
+R-Square: 0.000000
+RMSE: 0.460359
+
+                     Parameter Estimates
+
+Variable            Estimate       Std Error      t Value    Pr > |t|
+Intercept               0.221111      0.460359        0.48    0.6322
+Z                       0.000000      0.460359        0.00    1.0000
+
+                     Box-Cox Transformation Lambda Table
+
+Lambda          R-Square      Log-Likelihood
+ -2.0000         0.000000      -1540.4617
+ -1.5000         0.000000       -964.3315
+ -1.0000         0.000000       -398.8018
+ -0.5000         0.000000        140.8382
+  0.0000         0.000000        527.3499
+  0.5000         0.000000        335.5195
+  1.0000        -0.000000        -47.4484
+  1.5000         0.000000       -471.7373
+  2.0000        -0.000000       -910.7344
+
+
+                     Observation Data
+
+     subject   condition        time      dosage   delta_CCK           z   Predicted    Residual
+      1.0000   sucralose     -1.0000      0.0373      0.0000      0.0000      0.2211     -0.2211
+      1.0000   sucralose     15.0000      0.0373      0.8000      0.0000      0.2211      0.5789
+      1.0000   sucralose     30.0000      0.0373      0.4000      0.0000      0.2211      0.1789
+      1.0000   sucralose     44.0000      0.0373      0.4000      0.0000      0.2211      0.1789
+      1.0000   sucralose     60.0000      0.0373      0.3000      0.0000      0.2211      0.0789
+      1.0000   sucralose     75.0000      0.0373      0.5000      0.0000      0.2211      0.2789
+      1.0000   sucralose     89.0000      0.0373      0.6000      0.0000      0.2211      0.3789
+      1.0000   sucralose    105.0000      0.0373      0.1000      0.0000      0.2211     -0.1211
+      1.0000   sucralose    120.0000      0.0373      0.3000      0.0000      0.2211      0.0789
+      1.0000   sucralose    134.0000      0.0373      0.2000      0.0000      0.2211     -0.0211
+      1.0000  erythritol     -1.0000     51.4000      0.0000      0.0000      0.2211     -0.2211
+      1.0000  erythritol     15.0000     51.4000      0.6000      0.0000      0.2211      0.3789
+      1.0000  erythritol     30.0000     51.4000      0.3000      0.0000      0.2211      0.0789
+      1.0000  erythritol     44.0000     51.4000      0.4000      0.0000      0.2211      0.1789
+      1.0000  erythritol     60.0000     51.4000      0.1000      0.0000      0.2211     -0.1211
+      1.0000  erythritol     75.0000     51.4000      0.6000      0.0000      0.2211      0.3789
+      1.0000  erythritol     89.0000     51.4000      0.0000      0.0000      0.2211     -0.2211
+      1.0000  erythritol    105.0000     51.4000      0.5000      0.0000      0.2211      0.2789
+      1.0000  erythritol    120.0000     51.4000      0.5000      0.0000      0.2211      0.2789
+      1.0000  erythritol    134.0000     51.4000      0.1000      0.0000      0.2211     -0.1211
+      1.0000     sucrose     -1.0000     30.0000      0.0000      0.0000      0.2211     -0.2211
+      1.0000     sucrose     15.0000     30.0000      0.4000      0.0000      0.2211      0.1789
+      1.0000     sucrose     30.0000     30.0000      0.4000      0.0000      0.2211      0.1789
+      1.0000     sucrose     44.0000     30.0000      0.3000      0.0000      0.2211      0.0789
+      1.0000     sucrose     60.0000     30.0000      0.2000      0.0000      0.2211     -0.0211
+      1.0000     sucrose     75.0000     30.0000      0.3000      0.0000      0.2211      0.0789
+      1.0000     sucrose     89.0000     30.0000      0.3000      0.0000      0.2211      0.0789
+      1.0000     sucrose    105.0000     30.0000      0.4000      0.0000      0.2211      0.1789
+      1.0000     sucrose    120.0000     30.0000      0.7000      0.0000      0.2211      0.4789
+      1.0000     sucrose    134.0000     30.0000      0.3000      0.0000      0.2211      0.0789
+      2.0000     sucrose     -1.0000     30.0000      0.0000      0.0000      0.2211     -0.2211
+      2.0000     sucrose     15.0000     30.0000      0.2000      0.0000      0.2211     -0.0211
+      2.0000     sucrose     30.0000     30.0000      0.0000      0.0000      0.2211     -0.2211
+      2.0000     sucrose     44.0000     30.0000      0.4000      0.0000      0.2211      0.1789
+      2.0000     sucrose     60.0000     30.0000      0.5000      0.0000      0.2211      0.2789
+      2.0000     sucrose     75.0000     30.0000      0.2000      0.0000      0.2211     -0.0211
+      2.0000     sucrose     89.0000     30.0000      0.4000      0.0000      0.2211      0.1789
+      2.0000     sucrose    105.0000     30.0000      0.6000      0.0000      0.2211      0.3789
+      2.0000     sucrose    120.0000     30.0000      0.3000      0.0000      0.2211      0.0789
+      2.0000     sucrose    134.0000     30.0000      0.0000      0.0000      0.2211     -0.2211
+      2.0000  erythritol     -1.0000     32.4000      0.0000      0.0000      0.2211     -0.2211
+      2.0000  erythritol     15.0000     32.4000     -0.1000      0.0000      0.2211     -0.3211
+      2.0000  erythritol     30.0000     32.4000     -0.3000      0.0000      0.2211     -0.5211
+      2.0000  erythritol     44.0000     32.4000     -0.3000      0.0000      0.2211     -0.5211
+      2.0000  erythritol     60.0000     32.4000     -0.1000      0.0000      0.2211     -0.3211
+      2.0000  erythritol     75.0000     32.4000     -0.4000      0.0000      0.2211     -0.6211
+      2.0000  erythritol     89.0000     32.4000     -0.1000      0.0000      0.2211     -0.3211
+      2.0000  erythritol    105.0000     32.4000      0.0000      0.0000      0.2211     -0.2211
+      2.0000  erythritol    120.0000     32.4000     -0.3000      0.0000      0.2211     -0.5211
+      2.0000  erythritol    134.0000     32.4000     -0.2000      0.0000      0.2211     -0.4211
+
+                                                The UNIVARIATE Procedure
+                                                Variable:  bc_delta_CCK
+
+                                                        Moments
+
+N                                 90    Sum Weights                       90
+Mean                        0.128487    Sum Observations           11.563789
+Std Deviation               0.314659    Variance                    0.099011
+Skewness                   -0.145906    Kurtosis                    2.220102
+Uncorrected SS             10.297732    Corrected SS                8.811941
+Coeff Variation           244.896819    Std Error Mean              0.033168
+
+        Basic Statistical Measures         
+
+Location            Variability            
+--------  --------  -------------  --------
+Mean      0.128487  Std Deviation  0.314659
+Median    0.136206  Variance       0.099011
+Mode      0.000000  Range          2.039036
+
+Quantiles (Definition 5)
+
+Quantile     Estimate
+----------  ---------
+0% Min      -1.029734
+1%          -1.029734
+5%          -0.373060
+10%         -0.229485
+25% Q1       0.000000
+50% Median   0.136206
+75% Q3       0.322709
+90%          0.443441
+95%          0.546640
+99%          1.009302
+100% Max     1.009302
+
+         Extreme Observations          
+
+Lowest               Highest           
+--------  ---------  --------  --------
+Value     -1.029734  Value     0.546640
+Value     -0.544877  Value     0.818917
+Value     -0.373060  Value     0.934788
+Value     -0.373060  Value     0.960657
+Value     -0.373060  Value     1.009302
+
+
+
+
+         Tests for Location          
+
+Test                Statistic   p Value
+------------------  ---------  --------
+Student's t         3.873808165  0.000204319
+Sign                       17  0.000153537
+Signed Rank              1458  0.000160516
+
+          The Mixed Procedure          
+           Model Information           
+
+Item                              Value
+-------------------------  ------------
+Dependent Variable         bc_delta_CCK
+Estimation Method                  REML
+Covariance Structure           UN@AR(1)
+Degrees of Freedom Method           KR2
+Number of Observations               90
+
+Covariance Parameter Estimates
+
+Cov Parm  Estimate
+--------  --------
+Residual    0.0952
+
+           Type III Tests of Fixed Effects            
+
+Effect            Num DF    Den DF   F Value    Pr > F
+--------------  --------  --------  --------  --------
+condition              2         .      2.19    0.1210
+time                   9         .      1.94    0.0630
+condition*time        18         .      0.60    0.8892
+
+         Fit Statistics          
+
+Statistic                   Value
+-----------------------  --------
+-2 Res Log Likelihood     97.9176
+AIC (Smaller is Better)  159.9175
+BIC (Smaller is Better)  224.8422
+
+                         Solution for Fixed Effects                         
+
+Effect                Estimate  Standard Error        DF   t Value  Pr > |t|
+--------------------  --------  --------------  --------  --------  --------
+Intercept               0.1285          0.0325       1.0      3.95    0.0002
+condition_erythritol   -0.0777          0.0460       1.0     -1.69    0.0962
+condition_sucralose    -0.0102          0.0460       1.0     -0.22    0.8250
+time_-1                -0.1285          0.0976       1.0     -1.32    0.1929
+time_15                 0.2758          0.0976       1.0      2.83    0.0064
+time_30                -0.1224          0.0976       1.0     -1.25    0.2145
+time_44                -0.1395          0.0976       1.0     -1.43    0.1580
+time_60                 0.1117          0.0976       1.0      1.14    0.2569
+time_75                -0.0719          0.0976       1.0     -0.74    0.4638
+time_89                -0.0239          0.0976       1.0     -0.24    0.8074
+time_105                0.1805          0.0976       1.0      1.85    0.0693
+time_120                0.0016          0.0976       1.0      0.02    0.9871
+condition1*time1        0.0777          0.1380       1.0      0.56    0.5752
+condition2*time1        0.0102          0.1380       1.0      0.07    0.9412
+condition1*time2        0.0972          0.1380       1.0      0.70    0.4837
+condition2*time2       -0.0449          0.1380       1.0     -0.33    0.7459
+condition1*time3       -0.0445          0.1380       1.0     -0.32    0.7480
+condition2*time3        0.0666          0.1380       1.0      0.48    0.6311
+condition1*time4       -0.2713          0.1380       1.0     -1.97    0.0540
+condition2*time4        0.1246          0.1380       1.0      0.90    0.3701
+condition1*time5        0.1698          0.1380       1.0      1.23    0.2233
+condition2*time5       -0.1372          0.1380       1.0     -0.99    0.3242
+condition1*time6       -0.1370          0.1380       1.0     -0.99    0.3249
+condition2*time6        0.0780          0.1380       1.0      0.57    0.5740
+condition1*time7       -0.0980          0.1380       1.0     -0.71    0.4802
+condition2*time7        0.0137          0.1380       1.0      0.10    0.9211
+condition1*time8        0.2175          0.1380       1.0      1.58    0.1202
+condition2*time8       -0.1074          0.1380       1.0     -0.78    0.4394
+condition1*time9        0.0365          0.1380       1.0      0.26    0.7923
+condition2*time9       -0.1002          0.1380       1.0     -0.73    0.4708

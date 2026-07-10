@@ -1,0 +1,45 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: WORK.import
+Observations:  20
+Variables:     2
+
+Variables (in alphabetical order):
+
+  #  Variable   Type    Len  Format  Label
+---  ---------  ----  -----  ------  -----
+  1  age_yrs     Num      8          
+  2  BMI_kg_m2   Num      8          
+
+-------------------------------------------------------------------------------
+
+                                                  The MEANS Procedure
+
+ Variable            Mean
+ ------------------------
+ BMI_kg_m2     22.3240000
+ ------------------------
+
+                                                  The MEANS Procedure
+
+ Variable         Std Dev
+ ------------------------
+ BMI_kg_m2      1.8248443
+ ------------------------
+
+                                                  The MEANS Procedure
+
+ Variable           Mean
+ -----------------------
+ age_yrs      25.8000000
+ -----------------------
+
+                                                  The MEANS Procedure
+
+ Variable        Std Dev
+ -----------------------
+ age_yrs       7.6681158
+ -----------------------
+

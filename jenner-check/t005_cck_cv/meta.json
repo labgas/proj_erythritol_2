@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_cck_cv",
+  "source_file": "Code_CCK_CV.sas",
+  "source_blob_sha": "fe59d9538288942eaae951aa428237122cd357c9",
+  "source_commit": "61884f46cb8ae87063874ded7db8143c73362272",
+  "notes": "Plasma-CCK cardiovascular-condition analysis: distribution check (PROC UNIVARIATE), Box-Cox transform (PROC TRANSREG), and the condition-by-time repeated-measures mixed model (PROC MIXED, crossed condition|time, type=un@ar(1) direct-product covariance, ddfm=kr2). Original PROC IMPORT of the CV_hormones sheet replaced with an inline DATA step of the first three subjects' delta_CCK across all timepoints and conditions; model logic unchanged."
+}

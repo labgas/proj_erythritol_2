@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-10T17:04:48.976639+00:00",
+  "_captured_run_id": "r_be073f2b6f7d4b5a982a5fdcf25ea3e3",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "Read 48 rows from DATALINES.",
+    "Wrote PR_Reward (48 rows, 4 columns).",
+    "PROC MIXED data=PR_Reward"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

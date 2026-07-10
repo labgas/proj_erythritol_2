@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_implicit_wanting",
+  "source_file": "Code_Implicit_Wanting.sas",
+  "source_blob_sha": "5d35f9ad3a8827f0640db81bbe856d5dd3f0fffd",
+  "source_commit": "61884f46cb8ae87063874ded7db8143c73362272",
+  "notes": "Reaction-time distribution check (PROC UNIVARIATE), Box-Cox transform (PROC TRANSREG, lambda=0 path), and the sweet-choice chi-square test (PROC FREQ / chisq / expected, weighted counts). PROC IMPORT of the Implicit_Wanting sheet replaced with an inline DATA step of the 20 subject/choice/reaction_time rows; the chi-square block was already inline datalines in the original and is carried verbatim."
+}

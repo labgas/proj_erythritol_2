@@ -1,0 +1,47 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA PR_reward
+
+NOTE: Processing inline DATALINES (20 lines)
+
+NOTE: Read 20 rows from DATALINES.
+NOTE: Wrote PR_reward (20 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC CONTENTS data=PR_reward
+
+NOTE: PROC CONTENTS completed: 20 observations, 3 variables
+NOTE: PROC UNIVARIATE
+NOTE: DATA PR_reward
+
+
+NOTE: Read 20 rows from PR_reward.
+NOTE: Wrote PR_reward (20 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC TRANSREG data=PR_reward
+
+NOTE: PROC TRANSREG completed.
+NOTE: DATA PR_reward
+
+
+NOTE: Read 20 rows from PR_reward.
+NOTE: Wrote PR_reward (20 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC UNIVARIATE
+NOTE: DATA PR_reward_choice
+
+NOTE: Processing inline DATALINES (3 lines)
+
+NOTE: Read 3 rows from DATALINES.
+NOTE: Wrote PR_reward_choice (3 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_category.spec.json
+NOTE: PROC FREQ statement used.

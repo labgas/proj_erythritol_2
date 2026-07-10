@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_expected_liking_wanting",
+  "source_file": "Code_Expected_Liking_Wanting.sas",
+  "source_blob_sha": "8900b197ab844818e73d8bee41587e6c2c45fa0f",
+  "source_commit": "61884f46cb8ae87063874ded7db8143c73362272",
+  "notes": "Expected-liking and expected-wanting condition-contrast mixed models (PROC MIXED, type=un, LSMEANS Tukey) plus PROC UNIVARIATE distribution checks. Original PROC IMPORT of the Expected_Liking_Wanting sheet replaced with an inline DATA step of the baseline-timepoint (time=0) rows the models analyse; model logic unchanged."
+}

@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-10T16:57:57.200862+00:00",
+  "_captured_run_id": "r_97efad8f70e04e17af450363eeca678d",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "Read 20 rows from DATALINES.",
+    "PROC TRANSREG completed.",
+    "Wrote PR_reward_choice (3 rows, 2 columns).",
+    "PROC FREQ statement used."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

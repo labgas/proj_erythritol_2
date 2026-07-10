@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_bmi_age",
+  "source_file": "Code_BMI_age.sas",
+  "source_blob_sha": "0e8f11b2b2e44ee25d068ded5863a7e9583060cb",
+  "source_commit": "61884f46cb8ae87063874ded7db8143c73362272",
+  "notes": "Descriptive stats (PROC MEANS mean/std of BMI_kg_m2 and age_yrs). Original PROC IMPORT reads a SAS Studio XLSX path; replaced with an inline DATA step of the 20 study subjects' actual BMI/age. Computed BMI mean 22.324 reproduces the author's in-code comment exactly."
+}

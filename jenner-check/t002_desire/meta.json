@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_desire",
+  "source_file": "Code_Desire.sas",
+  "source_blob_sha": "c63c821544db923ea4ae2895948c7e4a8d3fa1a7",
+  "source_commit": "61884f46cb8ae87063874ded7db8143c73362272",
+  "notes": "Desire distribution check (PROC UNIVARIATE), Box-Cox transform (PROC TRANSREG), and repeated-measures mixed model (PROC MIXED, type=un, LSMEANS with Tukey). Original PROC IMPORT of the Desire sheet replaced with an inline DATA step of the 60 subject/condition/time/desire rows; the model logic is unchanged."
+}

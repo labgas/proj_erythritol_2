@@ -1,0 +1,40 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA PR_Reward
+
+NOTE: Processing inline DATALINES (48 lines)
+
+NOTE: Read 48 rows from DATALINES.
+NOTE: Wrote PR_Reward (48 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC CONTENTS data=PR_Reward
+
+NOTE: PROC CONTENTS completed: 48 observations, 4 variables
+NOTE: PROC UNIVARIATE
+NOTE: PROC MIXED data=PR_Reward
+
+NOTE: PROC MIXED: using Python wrapper (mixed_renderer.py).
+NOTE: PROC MIXED results written to: ./ods_output/mixed_results.spec.json
+NOTE: Formula: liking ~ C(condition)
+NOTE: Group variable: None
+NOTE: Estimation method: REML (reml=True)
+NOTE: Repeated covariance structure: TYPE=UN
+NOTE: Using GEE for covariance structure: UN
+NOTE: Direct REML for UN: converged=True, nll=167.9875
+NOTE: Direct REML UN: 7 cov params, LL=-218.7371
+NOTE: PROC MIXED ODS Graphics generated.
+NOTE: PROC UNIVARIATE
+NOTE: PROC MIXED data=PR_Reward
+
+NOTE: PROC MIXED: using Python wrapper (mixed_renderer.py).
+NOTE: PROC MIXED results written to: ./ods_output/mixed_results.spec.json
+NOTE: Formula: wanting ~ C(condition)
+NOTE: Group variable: None
+NOTE: Estimation method: REML (reml=True)
+NOTE: Repeated covariance structure: TYPE=UN
+NOTE: Using GEE for covariance structure: UN
+NOTE: Direct REML for UN: converged=True, nll=54.5120
+NOTE: Direct REML UN: 7 cov params, LL=-104.0215
+NOTE: PROC MIXED ODS Graphics generated.
